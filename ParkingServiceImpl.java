@@ -7,6 +7,9 @@ public class ParkingServiceImpl implements IParkingService {
     private ParkingLot[] parkingLots;
     private Integer remainingSlots;
 
+    public ParkingServiceImpl() {
+      this.remainingSlots = 0;
+    }
     @Override
     public void createParkingLot(int size) {
         parkingLots = new ParkingLot[size];
