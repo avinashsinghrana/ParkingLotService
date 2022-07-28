@@ -62,7 +62,7 @@ public class ParkingServiceImpl implements IParkingService {
         if (nameOfVehicles.length() >= LENGTH_OF_VEHICLE_NUMBER)
             System.out.println(nameOfVehicles);
         else
-            System.out.println("No any vehicle with driver age 18");
+            System.out.println("No any vehicle with driver age " + age);
     }
 
     private boolean validateData(String vehicleNumber, int age) {
