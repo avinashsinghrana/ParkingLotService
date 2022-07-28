@@ -1,4 +1,3 @@
-
 public class ParkingLot {
     private Integer number;
     private String vehicleNumber;
