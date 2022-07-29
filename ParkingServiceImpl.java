@@ -72,7 +72,7 @@ public class ParkingServiceImpl implements IParkingService {
         boolean isAgeValid = age >= 18;
         if (!isAgeValid)
             System.out.println("Invalid age group");
-        return true;
+        return isVehicleNumberValid && isAgeValid;
     }
 
     private int getVacantSlotNumber() {
